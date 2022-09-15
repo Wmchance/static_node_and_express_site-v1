@@ -1,6 +1,6 @@
 {"projects": [
     {
-        "id": 0,
+        "id": "0",
         "project_name": "Random Quote Generator",
         "description": "Generates a random quote when button is clicked or after a set time interval",
         "technologies": ["JavaScript", "HTML", "CSS"],
@@ -9,7 +9,7 @@
         "image_urls": ["images/quote_landing.png", "images/quote_add1.png"]
     },
     {
-        "id": 1,
+        "id": "1",
         "project_name": "Data Pagination and Filtering",
         "description": "Displays several “pages” of student data that the user can easily navigate and view",
         "technologies": ["JavaScript", "HTML", "CSS"],
@@ -18,7 +18,7 @@
         "image_urls": ["images/pagination_landing.png", "images/pagination_add1.png"]
     },
     {
-        "id": 2,
+        "id": "2",
         "project_name": "Interactive Registration Form",
         "description": "An interactive registration form for signing up for a Full Stack conference.",
         "technologies": ["JavaScript", "HTML", "CSS"],
@@ -27,7 +27,7 @@
         "image_urls": ["images/form_landing.png", "images/form_add1.png"]
     },
     {
-        "id": 3,
+        "id": "3",
         "project_name": "OOP Game Show App",
         "description": "A player tries to guess the phrase before running out of lives by selecting individual letters",
         "technologies": ["JavaScript", "HTML", "CSS"],
@@ -36,7 +36,7 @@
         "image_urls": ["images/oop_landing.png", "images/oop_add1.png"]
     },
     {
-        "id": 4,
+        "id": "4",
         "project_name": "Public API Requests",
         "description": "Creates a searchable employee directory by communicating with a third-party API ",
         "technologies": ["JavaScript", "HTML", "CSS"],
