@@ -23,17 +23,17 @@ app.use('/static', express.static('public'));
 */
 
 // 'Index/home' route
-router.get('/', function(req, res, next) {
+app.get('/', function(req, res, next) {
     res.render('index', { projects });
 });
 
 // 'About' route
-router.get('/about', function(req, res, next) {
+app.get('/about', function(req, res, next) {
     res.render('about');
 });
 
 // Project routes
-router.get('/projects/:id', function(req, res, next) {
+app.get('/projects/:id', function(req, res, next) {
     const projectId = req.params.id;
     const project = projects.find( ({ id }) => id === +projectId );
     res.render('project', { project });
