@@ -35,7 +35,7 @@ app.get('/about', function(req, res, next) {
 // Project routes
 app.get('/projects/:id', function(req, res, next) {
     const projectId = req.params.id;
-    const project = projects.find( ({ id }) => id === +projectId );
+    const project = projects.find( ({ id }) => id === projectId );
     res.render('project', { project });
   });
 
