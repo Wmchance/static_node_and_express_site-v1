@@ -1,4 +1,7 @@
+extends layout.pug
 
-h1 Sorry about that...
-h1= err.message 
-p= err.status 
+block content
+    h1 Sorry about that...
+    h1= err.message 
+    span
+        a(href='/') &larr; Current Projects
