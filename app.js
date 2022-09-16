@@ -35,9 +35,33 @@ app.get('/about', function(req, res, next) {
 // Project routes
 app.get('/projects/:id', function(req, res, next) {
     const projectId = req.params.id;
-    const project = projects.find( ({ id }) => id === projectId );
-    res.render('project', { project });
-  });
+
+    if(+projectId < projects.length && +projectId >= 0) {
+        const project = projects.find( ({ id }) => id === projectId );
+        res.render('project', { project });
+    };
+    next();
+});
+
+/*
+* Error handlers
+*/
+
+// 404 Error handler
+app.use((req, res, next) => {
+    const err = new Error(); 
+    err.status = 404; 
+    err.message = "It looks like that project doesn't exist...yet :-)"
+    console.log(err.status);
+    console.log(err.message);
+    res.render('page-not-found', { err });
+});
+
+// Global error handler
+app.use((err, req, res, next) => {
+    console.log(err.message);
+    console.log(err.message);
+});
 
 // Start server
 app.listen(3000, () => {
