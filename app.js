@@ -5,13 +5,6 @@ const app = express();
 // Import data.json
 const { projects } = require('./data.json');
 
-// Additional dependencies - 'cookie-parser' & 'body-parser'
-const cookieParser = require('cookie-parser');
-app.use(cookieParser());
-
-const bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({extended: false}));
-
 // view engine setup
 app.set('view engine', 'pug');
 
