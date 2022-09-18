@@ -40,8 +40,11 @@ app.get('/projects/:id', function(req, res, next) {
     if(+projectId < projects.length && +projectId >= 0) {
         const project = projects.find( ({ id }) => id === projectId );
         res.render('project', { project });
+    } else {
+        const err = new Error(); 
+        err.status = 404; 
+        next(err);
     };
-    next();
 });
 
 /*
@@ -52,17 +55,14 @@ app.get('/projects/:id', function(req, res, next) {
 app.use((req, res, next) => {
     const err = new Error(); 
     err.status = 404; 
-    err.message = "It looks like that project doesn't exist...yet :-)"
-    console.log(err.status);
-    console.log(err.message);
-    res.render('page-not-found', { err });
+    next(err);
 });
 
-// Global error handler
+// Global Error handler
 app.use((err, req, res, next) => {
-    console.log('Global error', err);
-    
+
     if(err.status === 404) {
+        err.message = "It looks like that project doesn't exist...yet :-)"
         console.log(err.status);
         console.log(err.message);
         res.render('page-not-found', { err });
