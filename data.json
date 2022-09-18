@@ -6,7 +6,7 @@
         "technologies": ["JavaScript", "HTML", "CSS"],
         "live_link": "https://wmchance.github.io/Random-Quote-Generator-Techdegree-project-1/",
         "github_link": "https://github.com/Wmchance/Random-Quote-Generator-Techdegree-project-1",
-        "image_urls": ["/static/images/quote_landing.jpeg", "/static/images/quote_add1.png", "/static/images/quote_add2.png"]
+        "image_urls": ["/static/images/quote_landing.jpeg", "/static/images/quote_add1.png", "/static/images/quote_add2.png", "/static/images/quote_add3.png"]
     },
     {
         "id": "1",
@@ -15,7 +15,7 @@
         "technologies": ["JavaScript", "HTML", "CSS"],
         "live_link": "https://wmchance.github.io/Data-Pagination-and-Filtering-Techdegree-project-2/",
         "github_link": "https://github.com/Wmchance/Data-Pagination-and-Filtering-Techdegree-project-2",
-        "image_urls": ["/static/images/pagination_landing.png", "/static/images/pagination_add2.png", "/static/images/pagination_add1.png"]
+        "image_urls": ["/static/images/pagination_landing.png", "/static/images/pagination_add2.png", "/static/images/pagination_add1.png", "/static/images/pagination_add3.png"]
     },
     {
         "id": "2",
@@ -24,7 +24,7 @@
         "technologies": ["JavaScript", "HTML", "CSS"],
         "live_link": "https://wmchance.github.io/Interactive-Form-Techdegree-project-3/",
         "github_link": "https://github.com/Wmchance/Interactive-Form-Techdegree-project-3",
-        "image_urls": ["/static/images/form_landing.png", "/static/images/form_add2.png", "/static/images/form_add1.png"]
+        "image_urls": ["/static/images/form_landing.png", "/static/images/form_add2.png", "/static/images/form_add3.png", "/static/images/form_add1.png"]
     },
     {
         "id": "3",
@@ -33,7 +33,7 @@
         "technologies": ["JavaScript", "HTML", "CSS"],
         "live_link": "https://wmchance.github.io/OOP-Game-Show-App-Techdegree-project-4/",
         "github_link": "https://github.com/Wmchance/OOP-Game-Show-App-Techdegree-project-4",
-        "image_urls": ["/static/images/oop_landing.png", "/static/images/oop_add1.png", "/static/images/oop_add2.png"]
+        "image_urls": ["/static/images/oop_landing.png", "/static/images/oop_add1.png", "/static/images/oop_add3.png", "/static/images/oop_add2.png"]
     },
     {
         "id": "4",
@@ -42,6 +42,6 @@
         "technologies": ["JavaScript", "HTML", "CSS"],
         "live_link": "https://wmchance.github.io/public_api_request_techdegree_project_5/",
         "github_link": "https://github.com/Wmchance/public_api_request_techdegree_project_5",
-        "image_urls": ["/static/images/api_landing.png", "/static/images/api_add1.png", "/static/images/api_add2.png"]
+        "image_urls": ["/static/images/api_landing.png", "/static/images/api_add3.png", "/static/images/api_add1.png", "/static/images/api_add2.png"]
     }
 ]}
