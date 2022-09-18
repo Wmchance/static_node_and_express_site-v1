@@ -35,6 +35,7 @@ app.get('/about', function(req, res, next) {
 // Project routes
 app.get('/projects/:id', function(req, res, next) {
     const projectId = req.params.id;
+    const project = projects.find( ({ id }) => id === projectId );
 
     if(+projectId < projects.length && +projectId >= 0) {
         const project = projects.find( ({ id }) => id === projectId );
@@ -59,8 +60,19 @@ app.use((req, res, next) => {
 
 // Global error handler
 app.use((err, req, res, next) => {
-    console.log(err.message);
-    console.log(err.message);
+    console.log('Global error', err);
+    
+    if(err.status === 404) {
+        console.log(err.status);
+        console.log(err.message);
+        res.render('page-not-found', { err });
+    } else {
+        err.status = err.status || 500; 
+        err.message = err.message || "It looks like there was a problem reaching our server. Please try refreshing the page.";
+        console.log(err.status);
+        console.log(err.message);
+        res.render('error', { err });
+    }
 });
 
 // Start server
