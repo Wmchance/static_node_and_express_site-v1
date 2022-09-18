@@ -2,7 +2,7 @@ extends layout.pug
 
 block content
     div.box
-        h1 Sorry about that...
+        h1 Sorry about that #{err.status} error
         h1= err.message 
         span
             a(href='/') &larr; Current Projects
