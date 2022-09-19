@@ -298,6 +298,7 @@ nav a span {
   padding: 0.85em 1em;
   background-color: #333;
   border: 1px solid transparent;
+  transition: all .3s ease;
 }
 
 
@@ -329,6 +330,7 @@ nav a span {
 
   .cell {
     margin: 0 0 15px;
+    transition: border .5s;
   }
 
   .cell h5 {
@@ -361,4 +363,45 @@ nav a span {
   .inner-wrapper {
     max-width: 1200px;
   }
+}
+
+/*
+Additional Style
+*/
+.boxShadow {
+  box-shadow: 10px 10px 10px rgb(174, 177, 182);
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.dev-logo-box {
+  padding: 10px;
+}
+
+.social-link {
+  display: block;
+  text-align: center;
+  width: 100%;
+  max-width: 255px;
+  margin: auto 0 5px 0;
+  padding: 0.85em 1em;
+  background-color: #ffffff;
+  border: 1px solid black;
+  transition: border .3s;
+}
+
+.social-link:hover {
+  border: 3px solid goldenrod;
+}
+
+.cell:hover {
+  border: 3px solid goldenrod;
+}
+
+.btn-link:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
 }

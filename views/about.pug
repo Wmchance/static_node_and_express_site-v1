@@ -49,9 +49,13 @@ block content
           li email@email.com
 
         //- Add URLs to the hrefs below to link to your social media accounts - feel free to use non-personal links to social media home pages if you prefer
-        a.btn-link(href='https://www.linkedin.com/in/williammchance/' target="_blank") LinkedIn
-        a.btn-link(href='https://github.com/Wmchance' target="_blank") GitHub
-        a.btn-link(href='https://twitter.com/OakedDbl' target="_blank") Twitter
+        a.social-link.boxShadow(href='https://www.linkedin.com/in/williammchance/' target="_blank") 
+          img.thumbnail(src=`/static/images/LI-logo.png`, alt=`linkedin logo`)
+        a.social-link.boxShadow(href='https://github.com/Wmchance' target="_blank")
+          img.thumbnail(src=`/static/images/GitHub_Logo.png`, alt=`Github logo`)
+          img.thumbnail(src=`/static/images/GitHub-Mark-32px.png`, alt=`Github logo`)
+        a.social-link.boxShadow(href='https://twitter.com/OakedDbl' target="_blank")
+          img.thumbnail(src=`/static/images/twitter-logo.png`, alt=`twitter logo`)
 
     nav.nav
       a(href='/')
