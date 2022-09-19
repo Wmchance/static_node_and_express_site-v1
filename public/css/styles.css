@@ -233,12 +233,19 @@ nav a span {
   margin: 0 auto 8px;
 }
 
-.portfolio-intro p {
+.portfolio-intro p:last-child {
   text-rendering: optimizeLegibility;
   font-size: 125%;
   margin: 0 auto;
   padding-bottom: 40px;
   border-bottom: 1px solid #eaeaea;
+}
+
+.portfolio-intro p {
+  text-rendering: optimizeLegibility;
+  font-size: 125%;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .projects-box h5 {
@@ -271,9 +278,14 @@ nav a span {
   font-size: 125%;
 }
 
-.about-bio p {
+.about-bio p:first-child {
   font-size: 15px;
   padding-top: 40px;
+}
+
+.about-bio p {
+  font-size: 15px;
+  padding-top: 10px;
 }
 
 .skills-contact-box ul {
