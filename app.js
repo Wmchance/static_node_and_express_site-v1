@@ -30,7 +30,7 @@ app.get('/projects/:id', function(req, res, next) {
     const projectId = req.params.id;
 
     if(+projectId < projects.length && +projectId >= 0) {
-        const project = projects.find( ({ id }) => id === projectId );
+        const project = projects.find( ({ id }) => id === projectId ); // the id property of the projects been destructured using { } so that they can be the element to compare to the given project id
         res.render('project', { project });
     } else {
         const err = new Error(); 
